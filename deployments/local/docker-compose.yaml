@@ -1,0 +1,10 @@
+version: "3"
+services:
+  learning-selenium:
+    image: selenium/standalone-chrome:4.0.0-beta-1-prerelease-20210106
+    volumes:
+      - /dev/shm:/dev/shm
+    container_name: learning-selenium
+    ports:
+      - 4444:4444
+      - 12345:5900
