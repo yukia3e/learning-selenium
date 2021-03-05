@@ -25,5 +25,8 @@ result_screenshot = driver.save_screenshot(FILENAME)
 if result_screenshot is False:
     print("An error has occurred while getting screenshot.")
 
+# ページの一番下までスクロール
+driver.execute_script('scroll(0, document.body.scrollHeight)')
+    
 # ブラウザを終了する
 driver.quit()
